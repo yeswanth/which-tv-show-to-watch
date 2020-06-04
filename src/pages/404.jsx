@@ -1,5 +1,5 @@
 import React from "react"
-import { SiteMetadata } from "../components"
+// import { SiteMetadata } from "../components"
 import { Link } from "gatsby"
 
 import "typeface-roboto"
@@ -8,7 +8,6 @@ import "../styles/style.css"
 export default () => {
   return (
     <div className="flex min-h-screen items-center">
-      <SiteMetadata title="Error 404" description="Page not found" />
       <div className="container">
         <h1 className="text-3xl lg:text-5xl font-extrabold leading-tight">
           Error 404
@@ -25,3 +24,5 @@ export default () => {
     </div>
   )
 }
+
+// <SiteMetadata title="Error 404" description="Page not found" />
