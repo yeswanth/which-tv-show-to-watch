@@ -4,9 +4,7 @@ module.exports = {
   siteMetadata: {
     links: {
       contact: "mailto:swamiyeswanth+whichtvshowtowatch@gmail.com",
-      facebook: "https://www.facebook.com",
-      linkedin: "https://www.linkedin.com",
-      twitter: "https://www.twitter.com",
+      twitter: "https://twitter.com/s1thsv",
     },
     locale: "en",
     title: "Travel destinations",

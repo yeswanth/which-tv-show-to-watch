@@ -53,14 +53,14 @@ Card.defaultProps = {
   navigation: {},
 }
 
-export const query = graphql`
-  fragment CardImageFragment on AirtableField {
-    localFiles {
-      childImageSharp {
-        fluid(maxWidth: 640, maxHeight: 420, cropFocus: NORTH) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   fragment CardImageFragment on AirtableField {
+//     localFiles {
+//       childImageSharp {
+//         fluid(maxWidth: 640, maxHeight: 420, cropFocus: NORTH) {
+//           ...GatsbyImageSharpFluid_withWebp
+//         }
+//       }
+//     }
+//   }
+// `

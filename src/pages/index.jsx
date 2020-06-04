@@ -1,13 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
 // import { Cards, Hero, SiteMetadata } from "../components"
-// import { Layout } from "../layouts/Layout"
+import { Layout } from "../layouts/Layout"
 
 export default ({ data }) => {
   let tvShows = data.allAirtable.nodes;
   console.log(tvShows);
   return (
-    <div>
+    <Layout>
       <h1>Which TV Show to watch Next?</h1>
       {tvShows.map((show,i) => {
         return (
@@ -16,7 +16,7 @@ export default ({ data }) => {
           <h3 key={i}>{show.data.Platform}</h3>
           </div>);
       })}
-    </div>
+    </Layout>
   )
 }
 

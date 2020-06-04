@@ -18,8 +18,6 @@ export const Footer = () => {
         meta: siteMetadata {
           links {
             contact
-            facebook
-            linkedin
             twitter
           }
         }
@@ -32,19 +30,9 @@ export const Footer = () => {
       <div className="container pt-12 pb-12 flex flex-wrap text-center lg:flex-row-reverse lg:justify-between lg:items-center">
         <ul className="w-full lg:w-auto">
           <FooterIconLink
-            href={links.facebook}
-            icon={FaFacebookF}
-            label="Facebook"
-          />
-          <FooterIconLink
             href={links.twitter}
             icon={FaTwitter}
             label="Twitter"
-          />
-          <FooterIconLink
-            href={links.linkedin}
-            icon={FaLinkedinIn}
-            label="LinkedIn"
           />
           <FooterIconLink
             href={links.contact}
