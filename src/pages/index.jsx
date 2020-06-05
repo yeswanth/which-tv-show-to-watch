@@ -11,7 +11,6 @@ export default ({ data }) => {
     <div class="container mx-auto">
       <h1 class="text-center my-5">Which TV Show to watch Next?</h1>
       <CenterCard></CenterCard>
-      
       <p class="text-center text-gray-500 text-xs">
       &copy;2020 Which TV Show to Watch. All rights reserved.
     </p>
