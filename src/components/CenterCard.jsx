@@ -6,7 +6,7 @@ import React, { useState } from "react"
 import { Feature } from "."
 
 export const CenterCard = props => {
-  const [ott, setOTT] = useState()
+  const [ott, setOTT] = useState("netflix")
 
   return (
     <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
