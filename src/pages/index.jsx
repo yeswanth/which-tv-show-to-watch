@@ -1,23 +1,65 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
 // import { Cards, Hero, SiteMetadata } from "../components"
 import { Layout } from "../layouts/Layout"
 import { CenterCard } from "../components"
 
+let OTT_MAPPING = {
+  'Amazon Prime':'prime',
+  'Netflix':'netflix',
+  'Hotstar':'hotstar'
+}
+
+function randomInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function getShowsByOTT(tvShows) {
+  let result = {}
+    tvShows.forEach(({data}, i) => {
+      if(OTT_MAPPING.hasOwnProperty(data.Platform)){
+        //array exists in result
+        let key = OTT_MAPPING[data.Platform]
+        if(result.hasOwnProperty(key)){
+          result[key].push(data)
+        }else{
+          result[key] = [data]
+        }
+      }else{
+        console.log("wrong data", data);
+      } 
+    })
+  return result;
+}
+
 export default ({ data }) => {
+  const [show, setShow] = useState("")
   let tvShows = data.allAirtable.nodes
-  console.log(tvShows)
+  let showsByOTT = getShowsByOTT(tvShows)
+
+  function onClickGetRecommendation(ott) {
+    console.log(ott)
+    if (ott) {
+      let shows = showsByOTT[ott]
+      let index = randomInteger(0,shows.length-1); 
+      console.log(shows[index]);
+      setShow(shows[index]);
+    }
+  }
+
   return (
     <div class="container mx-auto">
       <h1 class="text-center my-5">Which TV Show to watch Next?</h1>
-      <CenterCard></CenterCard>
+      <CenterCard
+        onSubmitButton={onClickGetRecommendation}
+        show={show}
+      ></CenterCard>
       <p class="text-center text-gray-500 text-xs">
-      &copy;2020 Which TV Show to Watch. All rights reserved.
-    </p>
+        &copy;2020 Which TV Show to Watch. All rights reserved.
+      </p>
     </div>
   )
 }
-
 
 // {tvShows.map((show, i) => {
 //   return (
