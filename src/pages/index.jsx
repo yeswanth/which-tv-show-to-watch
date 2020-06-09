@@ -5,31 +5,31 @@ import { Layout } from "../layouts/Layout"
 import { CenterCard } from "../components"
 
 let OTT_MAPPING = {
-  'Amazon Prime':'prime',
-  'Netflix':'netflix',
-  'Hotstar':'hotstar'
+  "Amazon Prime": "prime",
+  Netflix: "netflix",
+  Hotstar: "hotstar",
 }
 
 function randomInteger(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
 function getShowsByOTT(tvShows) {
   let result = {}
-    tvShows.forEach(({data}, i) => {
-      if(OTT_MAPPING.hasOwnProperty(data.Platform)){
-        //array exists in result
-        let key = OTT_MAPPING[data.Platform]
-        if(result.hasOwnProperty(key)){
-          result[key].push(data)
-        }else{
-          result[key] = [data]
-        }
-      }else{
-        console.log("wrong data", data);
-      } 
-    })
-  return result;
+  tvShows.forEach(({ data }, i) => {
+    if (OTT_MAPPING.hasOwnProperty(data.Platform)) {
+      //array exists in result
+      let key = OTT_MAPPING[data.Platform]
+      if (result.hasOwnProperty(key)) {
+        result[key].push(data)
+      } else {
+        result[key] = [data]
+      }
+    } else {
+      console.log("wrong data", data)
+    }
+  })
+  return result
 }
 
 export default ({ data }) => {
@@ -41,22 +41,26 @@ export default ({ data }) => {
     console.log(ott)
     if (ott) {
       let shows = showsByOTT[ott]
-      let index = randomInteger(0,shows.length-1); 
-      console.log(shows[index]);
-      setShow(shows[index]);
+      let index = randomInteger(0, shows.length - 1)
+      console.log(shows[index])
+      setShow(shows[index])
     }
   }
 
   return (
-    <div class="container mx-auto">
-      <h1 class="text-center my-10 text-xl text-grey-500">Which TV Show to watch Next?</h1>
-      <CenterCard
-        onSubmitButton={onClickGetRecommendation}
-        show={show}
-      ></CenterCard>
-      <p class="text-center text-gray-500 text-xs">
-        &copy;2020 Which TV Show to Watch. All rights reserved.
-      </p>
+    <div class="container mx-auto h-screen flex flex-col justify-center items-center">
+      <div class="xl:w-1/3">
+        <h1 class="font-hairline mb-6 text-center text-blue-500">
+          Which TV Show to Watch
+        </h1>
+        <CenterCard
+          onSubmitButton={onClickGetRecommendation}
+          show={show}
+        ></CenterCard>
+        <p class="text-center text-gray-500 text-xs">
+          &copy;2020 Which TV Show to Watch. All rights reserved.
+        </p>
+      </div>
     </div>
   )
 }
