@@ -13,7 +13,7 @@ export const CenterCard = props => {
       <div className="bg-white h-full rounded-md overflow-hidden">
         <div className="flex flex-col justify-center">
           <h1 className="my-2 text-center text-2xl text-blue-500 leading-snug">
-            {"Select your OTT Channel you subscribed to"}
+            {"Where do you want to watch your show?"}
           </h1>
           <select
             class="self-center my-2 block appearance-none bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"

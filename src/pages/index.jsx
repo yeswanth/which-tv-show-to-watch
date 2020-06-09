@@ -49,7 +49,7 @@ export default ({ data }) => {
 
   return (
     <div class="container mx-auto">
-      <h1 class="text-center my-5">Which TV Show to watch Next?</h1>
+      <h1 class="text-center my-10 text-xl text-grey-500">Which TV Show to watch Next?</h1>
       <CenterCard
         onSubmitButton={onClickGetRecommendation}
         show={show}
