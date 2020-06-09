@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { graphql } from "gatsby"
-// import { Cards, Hero, SiteMetadata } from "../components"
+import { SiteMetadata } from "../components"
 import { Layout } from "../layouts/Layout"
 import { CenterCard } from "../components"
 
@@ -48,6 +48,8 @@ export default ({ data }) => {
   }
 
   return (
+    <>
+    <SiteMetadata/>
     <div class="container mx-auto h-screen flex flex-col justify-center items-center">
       <div class="xl:w-1/3">
         <h1 class="font-hairline mb-6 text-center text-blue-500">
@@ -62,6 +64,7 @@ export default ({ data }) => {
         </p>
       </div>
     </div>
+    </>
   )
 }
 

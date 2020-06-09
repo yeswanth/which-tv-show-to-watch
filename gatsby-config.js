@@ -7,7 +7,7 @@ module.exports = {
       twitter: "https://twitter.com/s1thsv",
     },
     locale: "en",
-    title: "Travel destinations",
+    title: "Which TV Show to Watch Next",
   },
   plugins: [
     {
