@@ -4,4 +4,4 @@
 
 {"PK": "USER#david83", "SK": "SHOWLIST#david83#mylist", "showlistname": "mylist", "timestamp": "2018-11-17T07:18:03", "tags": ["cinema","funny"]}
 {"PK": "SHOWLIST#david83#mylist", "SK": "SHOW#david83#mylist#2018-11-17T07:18:03", "username":"david83","showlistname": "mylist", "timestamp": "2018-11-17T07:18:03", "name": "Dexter", "genre":"Drama", "url":"https://www.showtime.com/dexter","ott":"Netflix",reactions": {"+1": 1, "smiley": 1, "sunglasses": 0, "heart": 1}}
-{"PK": "SHOWLIST#david83#mylist", "SK": "SHOW#david83#mylist#2018-09-19T18:20:15", "username": "david83","showlistname": "mylist", "timestamp": "2018-09-19T18:20:15", "name": "Lucifer", "genre":"Police", "url":"https://www.showtime.com/lucifer","ott":"Amazon Prime","reactions": {"+1": 1, "smiley": 1, "sunglasses": 1, "heart": 0}}
+{"PK": "SHOWLIST#david83#mylist", "SK": "SHOW#david83#mylist#2018-09-19T18:20:15", "username":"david83","showlistname": "mylist", "timestamp": "2018-09-19T18:20:15", "name": "Lucifer","genre":"Police", "url":"https://www.showtime.com/lucifer","ott":"Amazon Prime","reactions": {"+1": 1, "smiley": 1, "sunglasses": 1, "heart": 0}}
