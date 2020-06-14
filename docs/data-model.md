@@ -26,9 +26,9 @@
 ## Implementation 
 | Entity        | Hash           | Range  |
 | :------------- |:-------------:|:-----:|
-| User    | USER#<USERNAME> | #METADATA#<USERNAME> |
-| ShowList     | USER#<USERNAME>      | SHOWLIST#<USERNAME>#<LISTNAME> |
-| Show | SHOWLIST#<LISTNAME> | SHOW#<LISTNAME>#<SHOWNAME> |
-| Reaction | REACTION#<LISTNAME>#<TYPE>     | SHOW#<LISTNAME>#<TIMESTAMP> |
-| Friendship | USER#<USERNAME>      | #FRIEND#<FRIEND_USERNAME> |
+| User    | `USER#<USERNAME>` | `#METADATA#<USERNAME>` |
+| ShowList     | `USER#<USERNAME>`      | `SHOWLIST#<USERNAME>#<LISTNAME>` |
+| Show | `SHOWLIST#<LISTNAME>` | `SHOW#<LISTNAME>#<SHOWNAME>` |
+| Reaction | `REACTION#<LISTNAME>#<TYPE>`     | `SHOW#<LISTNAME>#<TIMESTAMP>` |
+| Friendship | `USER#<USERNAME>`      | `#FRIEND#<FRIEND_USERNAME>` |
 
