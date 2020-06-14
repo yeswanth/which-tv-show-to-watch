@@ -1,14 +1,3 @@
-# Airtable listing theme for Gatsby
-
-### Gatsby starter theme integrated with [Airtable](https://airtable.com/)
-
-## Demo
-
-Live demo is available at: https://gatsby-airtable-listing.netlify.com/
-
-## Screenshot
-
-![The home page](screenshot.png?raw=true)
 
 ## Features
 
