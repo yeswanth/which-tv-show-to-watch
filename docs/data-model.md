@@ -8,3 +8,17 @@
 * **Friendship** - followed_user, following_user, timestamp
 
 ## Access Patterns 
+### Read
+* Get lists for a user 
+* Get list for a user 
+* Get shows for a list 
+* Get shows by genre 
+* Get userprofile
+* View followers for a useer 
+* View followed for a user 
+
+### Write
+* Create list & shows 
+* Create/Update User profile 
+* Follow user 
+* Add reaction for a show 
