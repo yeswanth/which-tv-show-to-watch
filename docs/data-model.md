@@ -2,15 +2,15 @@
 
 ## Tables
 * **User** - name, email, **username**, timestamp, status
-* **List** - **username**, listname, tags, timestamp 
-* **Show** - **listname**, name, ott, genre, url, timestamp
+* **ShowList** - **username**, showlistname, tags, timestamp 
+* **Show** - **showlistname**, **showname**, ott, genre, url, timestamp
 * **Reaction** - reacting_user, show, reaction_type, timestamp
 * **Friendship** - followed_user, following_user, timestamp
 
 ## Access Patterns 
 ### Read
-* Get lists for a user 
-* Get list for a user 
+* Get show lists for a user 
+* Get showlist for a user 
 * Get shows for a list 
 * Get shows by genre 
 * Get userprofile
@@ -24,4 +24,11 @@
 * User adds reaction for a show 
 
 ## Implementation 
+| Entity        | Hash           | Range  |
+| :------------- |:-------------:|:-----:|
+| User    | USER#<USERNAME> | #METADATA#<USERNAME> |
+| ShowList     | USER#<USERNAME>      | SHOWLIST#<USERNAME>#<LISTNAME> |
+| Show | SHOWLIST#<LISTNAME> | SHOW#<LISTNAME>#<SHOWNAME> |
+| Reaction | REACTION#<LISTNAME>#<TYPE>     | SHOW#<LISTNAME>#<TIMESTAMP> |
+| Friendship | USER#<USERNAME>      | #FRIEND#<FRIEND_USERNAME> |
 
