@@ -28,7 +28,7 @@
 | :------------- |:-------------:|:-----:|
 | User    | `USER#<USERNAME>` | `#METADATA#<USERNAME>` |
 | ShowList     | `USER#<USERNAME>`      | `SHOWLIST#<USERNAME>#<LISTNAME>` |
-| Show | `SHOWLIST#<USERNAME>#<LISTNAME>` | `SHOW#<LISTNAME>#<SHOWNAME>` |
+| Show | `SHOWLIST#<USERNAME>#<LISTNAME>` | `SHOW#USERNAME#<LISTNAME>#<SHOWNAME>` |
 | Reaction | `REACTION#<LISTNAME>#<TYPE>`     | `SHOW#<LISTNAME>#<TIMESTAMP>` |
 | Friendship | `USER#<USERNAME>`      | `#FRIEND#<FRIEND_USERNAME>` |
 
