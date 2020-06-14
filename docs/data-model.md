@@ -21,4 +21,4 @@
 * Create list & shows 
 * Create/Update User profile 
 * Follow user 
-* Add reaction for a show 
+* User adds reaction for a show 
