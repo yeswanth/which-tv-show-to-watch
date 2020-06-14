@@ -14,7 +14,7 @@
 * Get shows for a list 
 * Get shows by genre 
 * Get userprofile
-* View followers for a useer 
+* View followers for a user 
 * View followed for a user 
 
 ### Write
