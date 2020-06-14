@@ -22,3 +22,6 @@
 * Create/Update User profile 
 * Follow user 
 * User adds reaction for a show 
+
+## Implementation 
+
