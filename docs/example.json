@@ -1,3 +1,7 @@
 {"PK": "USER#haroldwatkins", "SK": "#METADATA#haroldwatkins", "email": "andersontina@gmail.com", "name": "Michele Miles", "username": "haroldwatkins", "status": "ACTIVE", "interests": ["billion", "third", "green"], "followers": 12, "following": 10}
 {"PK": "USER#david83", "SK": "#METADATA#david83", "email": "davidhamilton@yahoo.com", "name": "Hannah Anderson", "username": "david83", "status": "ACTIVE", "interests": ["as", "offer", "near"], "followers": 9, "following": 10 }
 {"PK": "USER#haroldwatkins", "SK": "#FRIEND#david83", "followedUser": "haroldwatkins", "followingUser": "david83", "timestamp": "2019-05-10T00:10:47"}
+
+{"PK": "USER#david83", "SK": "SHOWLIST#david83#mylist", "showlistname": "mylist", "timestamp": "2018-11-17T07:18:03", "tags": ["cinema","funny"]}
+{"PK": "SHOWLIST#david83#mylist", "SK": "SHOW#david83#mylist#2018-11-17T07:18:03", "username":"david83","showlistname": "mylist", "timestamp": "2018-11-17T07:18:03", "name": "Dexter", "genre":"Drama", "url":"https://www.showtime.com/dexter","ott":"Netflix",reactions": {"+1": 1, "smiley": 1, "sunglasses": 0, "heart": 1}}
+{"PK": "SHOWLIST#david83#mylist", "SK": "SHOW#david83#mylist#2018-09-19T18:20:15", "username": "david83","showlistname": "mylist", "timestamp": "2018-09-19T18:20:15", "name": "Lucifer", "genre":"Police", "url":"https://www.showtime.com/lucifer","ott":"Amazon Prime","reactions": {"+1": 1, "smiley": 1, "sunglasses": 1, "heart": 0}}
